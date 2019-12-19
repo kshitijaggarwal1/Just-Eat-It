@@ -1,0 +1,96 @@
+@import url(https://fonts.googleapis.com/css?family=Anton&display=swap);
+body
+{
+	background-color:rgb(255,240,240);
+}
+.header
+{
+	top:0;
+	background-color:rgb(255,255,255);
+	height:100px;
+	width:100%;
+}
+.header ul
+{
+    border-radius:10px;
+    float:right;
+	list-style-type:none;
+	margin:0;
+	padding:0;
+	overflow:hidden;
+	background-color:rgba(255,255,255,.8);
+}
+.header li
+{
+	float:left;
+}
+.header li a
+{
+    display:block;
+	color:rgba(0,0,0);
+	text-align:center;
+	padding:14px;
+	text-decoration:none;
+}
+.header li a:hover
+{
+	background-color:rgb(0,0,0,.1);
+}
+.header h2
+{
+	display:inline;
+}
+.design
+{
+	background-color:rgb(235,235,235);
+	width:auto;
+	height:40px;
+	margin-top:0;
+}
+.design3
+{
+	background-color:rgb(245,245,245);
+	width:auto;
+	height:40px;
+	margin-top:0;
+	margin-bottom:0;
+}
+.design2
+{
+	background-color:rgb(240,240,240);
+	width:auto;
+	height:40px;
+	margin-top:0;
+	margin-bottom:0;
+}
+.content
+{
+	background-color:rgb(250,240,240);
+	margin-top:0;
+	text-align:center;
+}
+.breserv
+{
+	margin-top:20px;
+	margin-left:45%;
+	margin-right:45%;
+	width:auto;
+	padding:10px;
+	background-color:rgb(0,0,0);
+	color:rgb(255,255,255);
+}
+.breserv:hover
+{
+	border-radius:15px 0 15px 0;
+	box-shadow:5px 5px rgb(200,200,200);	
+}
+.describe
+{
+	text-align:center;
+	width:auto;
+	margin-top:20px;
+	margin-left:25%;
+	margin-right:25%;
+	margin-bottom:25px;
+	padding:10px;
+}

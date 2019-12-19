@@ -1,0 +1,197 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <!-- Required meta tags -->
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+
+    <!-- Bootstrap CSS -->
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css" integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
+
+    <title>Reservation</title>
+    <style>
+        body
+        {
+            margin:0;
+            padding:0;
+            background:url("images/reserve3.jpg");
+            background-position:center;
+            background-repeat:no-repeat;
+            background-size:cover;
+            font-family:sans-serif;
+        }
+        .loginbox
+        {
+            background-color:rgba(0,0,0,0.8);
+            width:20%;
+            color:white;
+            margin:auto;
+            padding:12px;
+            margin-top:10px;
+        }
+        .nav-bar
+        {
+            margin-bottom:10px;
+            padding-bottom:10px;
+            background-image:linear-gradient(rgba(255,255,255,.9),rgba(255,255,255,.8),rgba(255,255,255,.7),rgba(255,255,255,0.6),rgba(255,255,255,.4),rgba(255,255,255,0.2));
+        }
+        .header
+{
+	background-image:linear-gradient(rgba(0,0,0,1),rgba(0,0,0,0));
+	top:0;
+	left:0;
+	color:white;
+	width:100%;
+	position:fixed;
+	height:150px;
+}
+ul
+{
+	top:0;
+    border-radius:10px;
+    float:right;
+	list-style-type:none;
+	margin:0;
+	padding:0;
+	overflow:hidden;
+	background-color:rgba(255,255,255,.8);
+}
+li
+{
+	float:left;
+}
+li a
+{
+    display:block;
+	color:rgba(0,0,0);
+	text-align:center;
+	padding:14px;
+	text-decoration:none;
+}
+li a:hover
+{
+	background-color:rgba(0,0,0,.1);
+}
+h2
+{
+	position:fixed;
+	top:0;
+	float:left;
+	display:inline;
+	margin:0;
+}
+.heading
+{
+    margin-top:110px;
+    margin-left:auto;
+    color:white;
+    text-align:center;
+}
+    </style>
+  </head>
+  <body>
+  <div class="header">
+        <div class ="title">
+            <h2>
+                JUST EAT IT!!
+            </h2>
+        </div>
+        <ul>
+            <li><a href="home.php">Home</a></li>
+            <li><a href="hoursandlocation.php">Hours and Location</a></li>
+            <li><a href="index.html">Menu</a></li>
+            <li><a href="login2.html">Order Online</a></li>
+            <li><a href="about_us.php">About Us</a></li>
+            <li><a href="reservation.html">Reservation</a></li>
+            <li><a href="IndividualOrder.php">Your Orders</a></li>
+        </ul>
+    </div>
+    <div class="heading">
+        <h3>
+            Welcome to the Reservation portal
+        </h3>
+    </div>
+    <div class="loginbox">
+    <form action="reservation.php" method="post" onsubmit="return check()">
+        <label>First Name</label>
+        <p>
+        <input type="text" name="name" id = "name" required>
+        <div id="name1" style="font-size:12px;color:tomato;margin-top:0;padding-top:0"></div>
+        </p>
+        <label>Phone Number</label>
+        <p>
+        <input type="number" name='phone' id="phone" required><br>
+        <div id="name2" style="font-size:12px;color:tomato;margin-top:0;padding-top:0"></div>
+        </p>
+        <label>Persons</label>
+        <p>
+            <input type="number" name="persons" id="person" required><br>
+            <div id="name3" style="font-size:12px;color:tomato;margin-top:0;padding-top:0"></div>
+        </p>
+        <label>Date</label>
+        <p>
+        <input type="date" name="date" required><br>
+        </p>
+        <label>Time</label>
+        <p>
+        <input type="time" name="time" required><br>
+        </p>
+        <label>Select the Location-:</label>
+        <p>
+        <input type="radio" name="location" value="sector-62" required>Sector 62, Noida<br>
+        <input type="radio" name="location" value="Connaught">Connaught Place<br>
+        <input type="radio" name="location" value="sector-16">Sector 16, Noida<br>
+        <input type="radio" name="location" value="Gurugram">Gurugram<br>
+        <input type="radio" name="location" value="Ghaziabad">Ghaziabad<br>
+        </p>
+        <p>
+            <input type="submit" value="Submit" id ="wer" style="background-color:tomato;color:white;padding:5px">
+        </p>
+    </form>
+    </div>
+
+    <!-- Optional JavaScript -->
+    <!-- jQuery first, then Popper.js, then Bootstrap JS -->
+    <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js" integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo" crossorigin="anonymous"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.7/umd/popper.min.js" integrity="sha384-UO2eT0CpHqdSJQ6hJty5KVphtPhzWj9WO1clHTMGa3JDZwrnQq4sF86dIHNDz0W1" crossorigin="anonymous"></script>
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js" integrity="sha384-JjSmVgyd0p3pXB1rRibZUAYoIIy6OrQ6VrjIEaFf/nJGzIxFDsf4x0xIM+B07jRM" crossorigin="anonymous"></script>
+    <script>
+        function check()
+        {
+            var x = document.getElementById("name").value;
+            var pat1 = /[^A-z]/g;
+            var result = pat1.test(x);
+            if(result)
+            {
+                document.getElementById("name1").innerHTML="Please Enter a valid Name";
+                return false;
+            }
+            var y = document.getElementById("phone").value;
+            var pat2 = /[^0-9]/g;
+            var res= pat2.test(y);
+            y.toString();
+            var sln  = y.length;
+            if(res===true || sln!=10)
+            {
+                document.getElementById("name2").innerHTML="Please Enter a Valid Phone Number";
+                return false;
+            }
+
+            var z = document.getElementById("person").value;
+            var pat3 = /[^0-9]/g;
+            var resu = pat3.test[z];
+            if(resu===true)
+            {
+                document.getElementById("name3").innerHTML="Please Enter a Valid Number";
+                return false;
+            }
+            if(z<=0)
+            {
+                document.getElementById("name3").innerHTML="Please Enter a valid Number";
+                return false;
+            }
+            
+        }
+    </script>
+</body>
+</html>

@@ -1,0 +1,22 @@
+<?php
+$conn=new mysqli("localhost","root","","cart")
+$phone_no = $_POST["phone_no"];
+$password= $POST["password"];
+$sql = "Select name from customer
+	where phone_no = $phone_no ";
+	if($conn->query($sql)===TRUE)
+	{
+		$pass= "Select password from customer 
+		where phone_no = $phone_no";
+		if($password==$pass)
+		{
+			header("Location:cart.html");
+		}
+		else 
+		{
+			echo=""
+		}
+	}
+	else 
+
+?>

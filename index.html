@@ -1,0 +1,288 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+	<meta charset="UTF-8" />
+	<meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<title>3D Menu</title>
+	<meta name="description" content="A responsive folded flyer-like restaurant menu with some 3D" />
+	<meta name="keywords"
+		content="css3, perspective, 3d, jquery, transform3d, responsive, template, restaurant, menu, leaflet, folded, flyer, concept" />
+	<meta name="author" content="Codrops" />
+	<link rel="shortcut icon" href="../favicon.ico">
+	<link rel="stylesheet" type="text/css" href="css/style.css" />
+	<link href='http://fonts.googleapis.com/css?family=Raleway:300,500|Arvo:700' rel='stylesheet' type='text/css'>
+	<script type="text/javascript" src="js/modernizr.custom.79639.js"></script>
+	<link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.3.1/css/all.css"
+		integrity="sha384-mzrmE5qonljUremFsqc01SB46JvROS7bZs3IO2EmfFsd15uHvIt+Y8vEf7N7fWAU" crossorigin="anonymous">
+</head>
+
+<body>
+		
+
+<br>
+	<header>
+
+		<h1>
+				<font color="#FDFDFD "><center>Way to your stomach...</center></font>
+		</h1>
+
+		<div class="support-note">
+			<span class="no-cssanimations">CSS animations are not supported in your browser</span>
+			<span class="no-csstransforms">CSS transforms are not supported in your browser</span>
+			<span class="no-csstransforms3d">CSS 3D transforms are not supported in your browser</span>
+			<span class="no-csstransitions">CSS transitions are not supported in your browser</span>
+			<span class="note-ie">Sorry, only modern browsers.</span>
+		</div>
+
+	</header>
+	<form name="cart" action="ordertodb.php" method="POST">
+		<section class="main">
+
+			<div id="rm-container" class="rm-container">
+
+				<div class="rm-wrapper">
+
+					<div class="rm-cover">
+
+						<div class="rm-front">
+							<div class="rm-content">
+
+								<div class="rm-logo"></div>
+								<h2>Just E@t it!</h2>
+								<h3><i class="fas fa-glass-cheers"> We Create a way to suffice your hunger </i></h3>
+
+								<a href="#" class="rm-button-open">View the Menu</a>
+								<div class="rm-info">
+									<p>
+										<strong>Just Eat it!</strong><br>
+										11/36, Windsor Street<br>
+										Ghaziabad, UP- 201309<br>
+										<strong>Phone</strong> 999999999<br>
+										<strong>Fax</strong> 9435123407</p>
+								</div>
+
+							</div>
+						</div>
+
+						<div class="rm-back">
+							<div class="rm-content">
+								<h4>Appetizers</h4>
+								<dl>
+									<dt><input type="checkbox" name="added[]" onclick='totalval(this.value)'
+											onclick='totalval(this.value)' value="1"> &nbsp;Vegetable Samosa
+										&nbsp;&nbsp;<label> 300/-</label></dt>
+									<dd>Roasted artichokes with chipotle aioli and tomato sauce</dd>
+
+									<dt><input type="checkbox" name="added[]" onclick='totalval(this.value)' value="2">
+										&nbsp;Chilli Paneer Dry
+										&nbsp;&nbsp;<label> 250/-</label></dt>
+									<dd>Blue cheese and citrus bruschetta</dd>
+
+									<dt><input type="checkbox" name="added[]" onclick='totalval(this.value)' value="3">
+										&nbsp;Baby corn cheese roll
+										&nbsp;&nbsp;<label> 250/-</label></dt>
+									<dd>Baked cheese roll with crisped baby corns</dd>
+
+									<dt><input type="checkbox" name="added[]" onclick='totalval(this.value)' value="4">
+										&nbsp;Podi Idli
+										&nbsp;&nbsp;<label> 500/-</label></dt>
+									<dd>Shallow fried with creative flavor</dd>
+
+									<dt><input type="checkbox" name="added[]" onclick='totalval(this.value)' value="5">
+										&nbsp;Papad Rolls
+										&nbsp;&nbsp;<label> 420/-</label></dt>
+									<dd>Instant spring rolls</dd>
+								</dl>
+
+								<h4>Salads &amp; More</h4>
+								<dl>
+									<dt><input type="checkbox" name="added[]" onclick='totalval(this.value)' value="6">
+										&nbsp;Green Delight
+										&nbsp;&nbsp;<label> 120/-</label></dt>
+									<dd>Watercress, frisee and avocado salad</dd>
+
+									<dt><input type="checkbox" name="added[]" onclick='totalval(this.value)' value="7">
+										&nbsp;Gourmet Yam Taohu
+										&nbsp;&nbsp;<label> 180/-</label></dt>
+									<dd>Thai tofu salad yam taohu</dd>
+
+									<dt><input type="checkbox" name="added[]" onclick='totalval(this.value)' value="8">
+										&nbsp;Panini Deluxe
+										&nbsp;&nbsp;<label> 240/-</label></dt>
+									<dd>Buffalo mozzarella basil panini</dd>
+								</dl>
+							</div>
+							<div class="rm-overlay"></div>
+
+						</div>
+
+					</div>
+
+					<div class="rm-middle">
+						<div class="rm-inner">
+							<div class="rm-content">
+								<h4>Main Courses</h4>
+								<dl>
+									<dt><input type="checkbox" name="added[]" onclick='totalval(this.value)' value="9">
+										&nbsp;Paneer Butter Masala
+										&nbsp;&nbsp;<label> 310/-</label></dt>
+									<dd>Fried cheese pieces within a delicious gravy</dd>
+
+									<dt><input type="checkbox" name="added[]" onclick='totalval(this.value)' value="10">
+										&nbsp;Dal Makhani
+										&nbsp;&nbsp;<label> 250/-</label></dt>
+									<dd>Punjabi tadka filled daal</dd>
+
+									<dt><input type="checkbox" name="added[]" onclick='totalval(this.value)' value="11">
+										&nbsp;Chana Masala
+										&nbsp;&nbsp;<label> 300/-</label></dt>
+									<dd>specially for Core-Indian customers</dd>
+
+									<dt><input type="checkbox" name="added[]" onclick='totalval(this.value)' value="12">
+										&nbsp;Navaratan Korma
+										&nbsp;&nbsp;<label> 350/-</label></dt>
+									<dd>Nine types of vegetables stuffed together</dd>
+
+									<dt><input type="checkbox" name="added[]" onclick='totalval(this.value)' value="13">
+										&nbsp;Butter Lamb Curry
+										&nbsp;&nbsp;<label> 400/-</label></dt>
+									<dd>Lamb simmerred in spicy tomato curry glimmered with white sauce</dd>
+
+									<dt><input type="checkbox" name="added[]" onclick='totalval(this.value)' value="14">
+										&nbsp;Luxur Oyster
+										&nbsp;&nbsp;<label> 300/-</label></dt>
+									<dd>King oyster mushroom with roasted cherries and sage</dd>
+
+									<dt><input type="checkbox" name="added[]" onclick='totalval(this.value)' value="15">
+										&nbsp;Tandoori Chicken
+										&nbsp;&nbsp;<label> 280/-</label></dt>
+									<dd>Leg Pieces and spicy tomato sauce</dd>
+
+									<dt><input type="checkbox" name="added[]" onclick='totalval(this.value)' value="16">
+										&nbsp;Saag Paneer
+										&nbsp;&nbsp;<label> 400/-</label></dt>
+									<dd>Paneer pieces mixed beautifully with saag</dd>
+								</dl>
+							</div>
+							<div class="rm-overlay"></div>
+						</div>
+					</div>
+
+					<div class="rm-right">
+
+						<div class="rm-front">
+
+						</div>
+
+						<div class="rm-back">
+							<span class="rm-close">Close</span>
+							<div class="rm-content">
+								<h4>About You</h4>
+								<dl>
+
+									<dt>Contact Number : <input type="text" name="mobileNumber"></dt><br>
+
+									
+									<dt>Order should be delivered at : <input type="text" name="orderAddress"></dt>
+									<br>
+									<div style="background-color: rgb(35, 177, 130); padding: 1rem; color:azure; font-size: medium;"  >
+									<dt>Total till now : <br>
+										<p id="tot"></p>
+										<dd> ( Inclusive of all taxes )</dd><br>
+									</dt>
+									</div>
+
+								</dl>
+								<div class="rm-order">
+									<p><strong>Would you like to know more about your chosen dish?</strong> <br>Call us
+										&amp; we'll help you...</p>
+									<div class="finish"><input type="submit" name="submit" value="FINISH"></div>
+								</div>
+							</div>
+						</div>
+					</div>
+				</div>
+
+			</div>
+		</section>
+
+		</div>
+		<script>
+			function totalval(colors) {
+				var total = 0;
+				
+				var x = document.getElementsByName('added[]');
+				for (i = 0; i < x.length; i++) {
+				// console.log(x[i].value);
+				if(x[i].checked)
+					var color=x[i].value;
+				else
+				{
+					continue;
+				}
+				if (color == 1)
+					total += 300;
+
+				if (color == 2)
+					total += 250;
+
+				if (color == 3)
+					total += 250;
+
+				if (color == 4)
+					total += 500;
+
+				if (color == 5)
+					total += 420;
+
+				if (color == 6)
+					total += 120;
+
+				if (color == 7)
+					total += 180;
+
+				if (color == 8)
+					total += 240;
+
+				if (color == 9)
+					total += 310;
+
+				if (color == 10)
+					total += 250;
+
+				if (color == 11)
+					total += 300;
+
+				if (color == 12)
+					total += 350;
+
+				if (color == 13)
+					total += 400;
+
+				if (color == 14)
+					total += 300;
+
+				if (color == 15)
+					total += 280;
+
+				if (color == 16)
+					total += 400;
+				}
+				document.getElementById('tot').innerHTML = total;
+			}
+		</script>
+		<script type="text/javascript" src="http://ajax.googleapis.com/ajax/libs/jquery/1.8.2/jquery.min.js"></script>
+		<script type="text/javascript" src="js/menu.js"></script>
+		<script type="text/javascript">
+			$(function () {
+
+				Menu.init();
+
+			});
+		</script>
+	</form>
+</body>
+
+</html>

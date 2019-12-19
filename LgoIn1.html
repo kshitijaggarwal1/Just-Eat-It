@@ -1,0 +1,197 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="UTF-8">
+<link rel = "stylesheet prefetch" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.5/css/bootstrap.min.css">
+<title>
+LogIn page
+</title>
+<style type ="text/css">
+body
+{
+	background-color: #555;
+}
+.container
+{
+	margin-top: 30px;
+}
+form
+{
+	max-width:350px;
+	width:100%;
+	margin:40px auto;
+	background:#fff;
+	position: relative;
+	box-shadow:0 5px 5px 0 rgba(50,50,50,0.7);
+}
+.form-wrapper::before, .form-wrapper::after
+{
+	background:#fff none repeat scroll 0 0;
+	border: 1px solid #ccc;
+	content:"";
+	height:100%;
+	left:0;
+	position:absolute;
+	top: 3.5px;
+	transform:rotateZ(8deg);
+	width:100%;
+	z-index:-1; 
+}
+.form-group
+{
+	padding:20px 0;
+	position:relative;
+	margin:bottom:0;
+}
+.form-control, .form-control:focus
+{
+	border:none;
+	box-shadow:none;
+	padding-left:0;
+	border-bottom:1px solid rgba(0,0,0,0.26);
+	border-radius:0;
+}
+.form-group label
+{
+	position:absolute;
+	width:100%;
+	left:0;
+	right:0;
+	bottom:0;
+	overflow:hidden;
+	top:4px;
+	color:rgba(0,0,0.26);
+}
+.form-group.focused label
+{
+	transition-dutration : 0.2s;
+	transition-timing-function : cubic-bezier(0.4s 0,0.2,1);
+	top:4px;
+	color:#00a4a0;
+}
+.form-group label::after
+{
+	background-color : #00a4a0;
+	bottom:14px;
+	content:"";
+	height:2px;
+	left:45%;
+	position:absolute;
+	transitition-duration : 0.2%;
+	transitition-timing-function : cubic-bezier(0.4 0,0.2,1);
+	visibility : hidden;
+	width:10px;
+}
+form h2
+{
+	color : #fff;
+	text-align : center;
+	text-transform:uppercase;
+	margin-bottom:30px;
+	background : #00a4a0;
+	padding:5px 0;
+	font-family : sans-seriff;
+}
+.form-wrapper
+{
+	padding: 20px;
+}
+.form-group.focused label::after
+{
+	left : 0;
+	visibility : visible;
+	width:100%;
+}
+button.btn 
+{
+	background : #00a4a0;
+	border:none;
+	border-radius:0;
+	text-transform:uppercase;
+	font-weight:400;
+	width:180px;
+	height:45px;
+	margin : 30px aut0;
+	display : block;
+}
+.slidedown
+{
+	animation-duration: 1s;
+	animation-name: slidedown;
+	animation-timing-function: ease;
+	visibility:visible; 
+}
+@keyframes slidedown
+{
+	0%
+	{
+		transform : translateY(-100%);
+	}
+	50%
+	{
+		transform : translateY(-8%);
+	}
+	65%
+	{
+		transform : translateY(-4%);
+	}
+	80%
+	{
+		transform : translateY(4%);
+	}
+	95%
+	{
+		transform : translateY(-2%);
+	}
+	100%
+	{
+		transform : translateY(-0%);
+	}
+}
+</style>
+</head>
+<body>
+<div class ="container">
+<div class ="row">
+<div class ="col-md-12">
+<form class = "slidedown">
+<h2>Log In</h2>
+<div class="form-wrapper">
+<div class ="form-group">
+<label>Name</label>
+<input type ="name" name ="name" class="form-control" id ="i">
+</div>
+<div class ="form-group">
+<label>Phone Number</label>
+<input type ="Number" name = "Phone_no" class="form-control" id = "">
+</div>
+<div class= "form-group">
+	<label>Number of Person</label>
+	<input type = "number" name= "no_of_person" class="form-control">
+</div>
+<div>
+	<label>
+		Enter the date
+	</label>
+	<input type = "date" name="date" class="form-control">
+</div>
+
+<button type ="button" class="btn btn-primary">Reserve Table</button>
+</div>
+</form>
+</div>
+</div>
+</div>
+<!-- <script type = "text/javascript">
+jQuery(document).ready(function($){
+$(".form-control.focus(function(){
+$(this).parent().removeClass("not-focused");
+$(this).parent().addClass("focused");
+}).blur(function(){
+$(this).parent().removeClass("focused");
+$(this).parent().addClass("not-focused");
+})
+});
+</script> -->
+</body>
+</html>

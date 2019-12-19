@@ -1,0 +1,56 @@
+<!DOCTYPE html>
+<html>
+<head>
+<title>
+Week7@1
+</title>
+
+<style>
+input
+{
+	margin:10px;
+}
+body
+{
+	background-color:lightblue;
+	text-align:center;
+}
+.mark
+{
+	color:rgb(255,0,0);
+}
+</style>
+</head>
+<body>
+<h2>Fill The Form</h2>
+<form action="/fill.php" name="myForm" method="post" onsubmit="return validateForm()">
+NAME:<input type="text" name="name" required><span class ="mark">&nbsp*</span><br><br>
+E-MAIL:<input id = "id1" type="text" name="email" required><span class="mark">&nbsp*</span>
+<br>
+<span id="id2"></span>
+<br><br>
+WEBSITE:<input type="text" name="website"><br><br>
+COMMENT:<textarea name="comment" rows="10" cols="40">
+</textarea><br><br>
+GENDER:
+<input type="radio" name="gender" value="male" required>Male
+<input type="radio" name="gender" value="female">Femlae
+<input type="radio" name="gender" value="Other">Other<span class="mark">&nbsp*</span><br>
+<input type="submit">
+<script>
+
+
+function validateForm()
+{
+var x = document.forms["myForm"]["email"].value;
+	 var y = x.search("@gmail.com"); 
+	if(y<=0)
+	{
+		alert("Your Email Id is Wrong.");
+		return false;
+	}
+}
+</script>
+</form> 
+</body>
+</html>

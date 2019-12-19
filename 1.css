@@ -1,0 +1,105 @@
+body {
+    background: url(https://images.unsplash.com/photo-1562518548-f7a3369abd22?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9&auto=format&fit=crop&w=1225&q=80);
+    background-size: cover;
+    background-position: center; 
+}
+
+.navbar-brand1{
+	color: white;
+	background-color: #EA4335;
+	text-align: center;
+	width: 250px;
+	height: 110px;
+	padding: 0.5px 3px;	
+}
+
+.navbar-brand1:hover{
+	width: 400px;
+}
+
+.navbar-brand2{
+	color: white;
+	background-color: #FBBC05;
+	text-align: center;
+	width: 250px;
+	height: 110px;
+	padding: 0.5px 3px;
+}
+
+.navbar-brand2:hover{
+	width: 400px;
+}
+
+.navbar-brand3{
+	color: white;
+	background-color: #34A853;
+	text-align: center;
+	width: 250px;
+	height: 110px;
+	padding: 0.5px 3px;
+}
+
+.navbar-brand3:hover{
+	width: 400px;
+}
+
+.navbar-brand4{
+	color: white;
+	background-color: #4285F4;
+	text-align: center;
+	width: 250px;
+	height: 110px;
+	padding: 0.5px 3px;	
+}
+
+.navbar-brand4:hover{
+	width: 400px;
+}
+
+h1:hover{
+	color: white;
+	padding: 9px;
+	display: inline-block;
+	text-decoration: none;
+}
+
+
+
+.other{
+	color: black;
+}
+
+.heading{
+	font-size: 75px;
+	color: white;
+}
+
+.split {
+  height: 100%;
+  width: 50%;
+  position: fixed;
+  z-index: 1;
+  overflow-x: hidden;
+  padding-top: 20px;
+}
+
+.left {
+  	left: 0;
+}
+
+.right {
+	width: 70%;
+  	right: 0; 
+  	padding-right: 60px;
+	color: white;
+    font-size: 40px;
+    opacity: 0.3;
+    text-align: center;
+}
+
+.copyright{
+	padding-top: 100px;
+	text-align: center;
+	bottom: 0;
+	color: #E6E6E6;
+}

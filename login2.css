@@ -1,0 +1,35 @@
+body {
+    background: url(https://images.unsplash.com/photo-1552247064-3c20191acba6?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9&auto=format&fit=crop&w=1225&q=80);
+    background-size: cover;
+    background-position: center; 
+}
+.content
+{
+	text-align:center;
+	background-color:#CDCFBF;
+	opacity: 0.8;
+	width:30%;
+	margin:5%;
+	border-radius:5px;
+}
+.login
+{
+	text-transform:uppercase;
+	background-color:#211B1B;
+	color:white;
+	padding:2px;
+	border-radius:5px;
+}
+
+h1{
+	font-size: 50px;
+}
+
+label{
+	font-size: 20px;
+	color: #232623;
+}
+
+input{
+	font-size: 20px;
+}

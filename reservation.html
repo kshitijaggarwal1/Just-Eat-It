@@ -1,0 +1,136 @@
+<!DOCTYPE html>
+<html>
+<head>
+<title>
+</title>
+<link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.8.2/css/all.css" rel="stylesheet">
+<link href="reservation.css" rel="stylesheet">
+<link href="style.css" rel="stylesheet">
+<style>
+	#inquiry_box
+	{
+		position:relative;
+		display:none;
+		padding:7px;
+		margin-top:20px;
+		background-color:rgba(0,0,0,0.9);
+		width:20%;
+		margin:auto;
+		color:white;
+		border-radius:5px;
+		text-align:left;
+		box-shadow:3px 3px grey;
+	}
+	#inquiry_box:hover
+	{
+		box-shadow:8px 8px grey;
+	}
+	#close
+	{
+		position:absolute;
+		right:5px;
+		top:0;
+		color:white;
+		font-size:35px;
+		font-weight:bold;
+	}
+	#close:hover,
+	#close:focus
+	{
+		color:red;
+		cursor:pointer;
+	}
+</style>
+</head>
+<body>
+<div class="header">
+<h2>
+JUST EAT IT!!
+</h2>
+<ul>
+<li><a href="home.php">Home</a></li>
+<li><a href="hoursandlocation.php">Hours and Location</a></li>
+<li><a href="index.html">Menu</a></li>
+<li><a href="login2.html">Order Online</a></li>
+<li><a href="about_us.php">About US</a></li>
+<li><a href="#reservation">Reservation</a></li>
+<li><a href="IndividualOrder.php">Your Orders</a></li>
+
+</ul>
+</div>
+<div class="design">
+</div>
+<div class="design2">
+</div>
+<div class="design3">
+</div>
+<div class="content">
+<h1>RESERVATIONS
+</h1>
+<hr width="60%" color="red" >
+<div class="describe">
+We are happy to have you join us at JUST EAT IT.. Our seating requests are powered through Open Table.
+ While we cannot guarantee seats in our main dining room, we do our best to accommodate your requests.
+ While you wait, please take a seat and relax in our bar and lounge area to enjoy one of our seasonal
+ or signature cocktails or a glass of Lebanese wine from our full drink menu. Please keep in mind we can
+ only seat complete parties and can only hold tables for up to 15 minutes past your reservation time.
+</div>
+<div class ="breserv">
+	<a href="reserve1.html" style="color:white;text-decoration:none">
+	Reserve Now</a>
+</div>
+<div class="describe">
+For all large party reservations (12 to 24 guests), we offer seating at long 
+tables along the banquettes for up to 24 guests.
+</div>
+<input type="submit" value="Check for Availability" class="breserv" style="font-size:13px" onclick="check()">
+</div>
+<script>
+function check()
+{
+    var x = document.getElementById('inquiry_box');
+	x.style.display = "block";
+}
+</script>
+<div id="inquiry_box">
+	<form action="availability.php" method="post">
+		<label>Enter te Date of Reservation</label>
+		<span onclick="deto()" id="close" title="Close Modal">&times;</span>
+		<script>
+		function deto()
+		{
+			var y = document.getElementById("inquiry_box");
+			y.style.display="none";
+		}
+		</script>
+		<p>
+			<input type ="date" name="date" required>
+		</p>
+		<label>Enter the Number of Persons:</label>
+		<p>
+			<input type="number" name="persons" required>
+		</p>
+		<label>Choose the Outlet</label>
+		<p>
+			<input type="radio" name="location" value="sector-62" required>Sector 62, Noida<br>
+			<input type="radio" name="location" value="Connaught">Connaught Place<br>
+			<input type="radio" name="location" value="sector-16">Sector 16, Noida<br>
+			<input type="radio" name="location" value="Gurugram">Gurugram<br>
+			<input type="radio" name="location" value="Ghaziabad">Ghaziabad<br>
+		</p>
+		<p>
+			<input type="submit" value="Check" style="background-color:tomato;padding:2px 6px;color:white">
+		</p>
+
+	</form>
+</div>
+</div>
+<div class="sbuttons">
+<a href="#" target="_blank" class="sbutton whatsapp" tooltip="Whatsapp"><i class="fab fa-whatsapp"></i></a>
+<a href="#" target="_blank" class="sbutton fb" tooltip="Facebook"><i class="fab fa-facebook"></i></a>
+<a href="#" target="_blank" class="sbutton gplus" tooltip="Google Plus"><i class="fab fa-google-plus-g"></i></a>
+<a href="#" target="_blank" class="sbutton twitt" tooltip="Twitter"><i class="fab fa-twitter"></i></a>
+<a href="#" target="_blank" class="sbutton pinterest" tooltip="Pinterest"><i class="fab fa-pinterest"></i></a>
+</div>
+</body>
+</html>

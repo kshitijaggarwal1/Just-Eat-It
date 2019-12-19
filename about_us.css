@@ -1,0 +1,77 @@
+@import url(https://fonts.googleapis.com/css?family=Anton&display=swap);
+body
+{
+	background-image:url('images/home2.jpg');
+	background-size:100% 100%;
+	background-attachment:fixed;
+}
+.header
+{
+	background-image:linear-gradient(rgba(0,0,0,1),rgba(0,0,0,0));
+	top:0;
+	left:0;
+	color:white;
+	width:100%;
+	position:fixed;
+	height:150px;
+}
+ul
+{
+	top:0;
+    border-radius:10px;
+    float:right;
+	list-style-type:none;
+	margin:0;
+	padding:0;
+	overflow:hidden;
+	background-color:rgba(255,255,255,.8);
+}
+li
+{
+	float:left;
+}
+li a
+{
+    display:block;
+	color:rgba(0,0,0);
+	text-align:center;
+	padding:14px;
+	text-decoration:none;
+}
+li a:hover
+{
+	background-color:rgb(0,0,0,.1);
+}
+h2
+{
+	position:fixed;
+	top:0;
+	float:left;
+	display:inline;
+	margin:0;
+}
+#display
+{
+	padding:20px;
+	font-size:40px;
+	text-align:center;
+	background-color:rgba(0,0,0,.7);
+	margin-left:25%;
+	margin-right:25%;
+	margin-top:20%;
+	color:white;
+}
+#head1
+{
+	font-size:30px;
+}
+#tell_me
+{
+	left:0;
+	padding:40px;
+	margin-top:25%;
+	background-color:rgba(255,255,255,0.8);
+	text-align:center;
+	width:100%;
+	color:rgb(0,0,0);
+}

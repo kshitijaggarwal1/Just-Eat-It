@@ -1,0 +1,68 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>Server Login Page</title>
+	<link rel="stylesheet" type="text/css" href="loginServer.css">
+	<link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.3.1/css/all.css" integrity="sha384-mzrmE5qonljUremFsqc01SB46JvROS7bZs3IO2EmfFsd15uHvIt+Y8vEf7N7fWAU" crossorigin="anonymous">
+</head>
+<body>
+
+	<p>Owner <u><i class="fas fa-crown" class="outsider"></i></u> Login</p>
+
+	<br><br><br>
+
+	<table align="center" frame="hsides">
+		<form action="Dashboard.php" method="POST" onsubmit="return checkpass()">
+			<!-- <tr>
+				<td>
+					<label for="username"><i class="fas fa-mobile-alt"></i> Mobile Number</label>
+				</td>
+				<td>
+					&nbsp;:&nbsp;
+				</td>
+				<td>
+					<input type="text" name="username" placeholder="9999999999">
+				</td>
+			</tr> -->
+<!-- 			<tr>
+				<td colspan="3">
+					&nbsp;
+				</td>
+			</tr> -->
+			<tr>
+				<td>
+					<label for="password"><i class="fas fa-key"></i> Password</label>		
+				</td>
+				<td>
+					&nbsp;:&nbsp;
+				</td>
+				<td>
+					<input type="password" id="pass" name="password">
+				</td>
+				<script>
+					function checkpass ()
+					{
+						var right=document.getElementById('pass').value;
+						if(right=="justeatit")
+							{
+								return true;
+							}
+						else
+						{
+							alert("Wrong Password");
+						}
+						return false;
+					}
+				</script>
+			</tr>
+			<tr>
+				<td colspan="3" rowspan="2">
+					<div><center><button type="submit">SUBMIT</button></center></div>
+				</td>
+			</tr>
+		</form>	
+
+	</table>
+
+</body>
+</html>
